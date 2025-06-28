@@ -1,4 +1,4 @@
-# 🤖 Jupiter FAQ Bot: AI-Powered Customer Support System
+z# 🤖 Jupiter FAQ Bot: AI-Powered Customer Support System
 
 *Transform static FAQ pages into an intelligent, conversational AI support system that understands user context and delivers instant, accurate answers — enhancing customer experience and reducing support workload.*
 
@@ -55,19 +55,12 @@ An intelligent FAQ bot that combines advanced web scraping, semantic search, and
 
 ## 🏗️ **System Architecture**
 
-
-
-```
-
-
-## 📊 System Block Diagram
-## 🏗️ System Architecture
-
 <!-- Centered image with width control using HTML inside Markdown -->
 <p align="center">
   <img src="./Block.png" alt="System Architecture Diagram" width="600"/>
 </p>
 
+```
 
 ### **How It Works: Step-by-Step**
 
