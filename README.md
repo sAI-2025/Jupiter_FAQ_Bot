@@ -61,20 +61,13 @@ An intelligent FAQ bot that combines advanced web scraping, semantic search, and
 
 
 ## 📊 System Block Diagram
+## 🏗️ System Architecture
 
-<!-- ✅ Standard Markdown fallback -->
-![Block Diagram](Block.png)
-
-<!-- ✅ HTML for size control (most underrated trick) -->
+<!-- Centered image with width control using HTML inside Markdown -->
 <p align="center">
-  <img src="Block.png" alt="Block Diagram" width="600"/>
+  <img src="./Block.png" alt="System Architecture Diagram" width="600"/>
 </p>
 
-<!-- 🔎 Optional tip: Use relative path for repo portability -->
-<!-- ./images/Block.png or ./docs/assets/Block.png -->
-
-User Query → Session Memory → Query Enhancement → Dual Retrieval → LLM Response → Context Update
-```
 
 ### **How It Works: Step-by-Step**
 
