@@ -1,6 +1,17 @@
 # 🤖 Jupiter FAQ Bot: AI-Powered Customer Support System
 
-[![Python](https://img://img.shields.io/badge/Langhttps://img.shields.io/badge/Chromahttps://img.shields.io/badge/License-MIT-green](https://colab.research.google.com/assets/colab-badge.svg static FAQ pages into intelligent, conversational AI support that understands context and delivers instant, accurate responses.**
+Transform static FAQ pages into intelligent, conversational AI support that understands context and delivers instant, accurate responses.
+
+---
+
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![LLM-Driven](https://img.shields.io/badge/LLM-Powered-brightgreen?logo=openai)
+![License](https://img.shields.io/badge/License-MIT-green?logo=opensourceinitiative)
+![Status](https://img.shields.io/badge/Status-Beta-orange?logo=githubactions)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/)  
+[![Star](https://img.shields.io/github/stars/your-username/jupiter-faq-bot?style=social)](https://github.com/your-username/jupiter-faq-bot/stargazers)
+
+---
 
 ## 🎯 **Problem Statement**
 
