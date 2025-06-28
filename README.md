@@ -1,4 +1,3 @@
-```markdown
 # 🤖 Jupiter FAQ Bot: AI-Powered Customer Support System
 
 *Transform static FAQ pages into an intelligent, conversational AI support system that understands user context and delivers instant, accurate answers — enhancing customer experience and reducing support workload.*
@@ -21,85 +20,80 @@
   </a>
 </p>
 
+
+
 ## 🎯 **Problem Statement**
 
 Traditional FAQ systems suffer from:
-- **Poor User Experience**: Users struggle to find relevant answers in static lists.
-- **High Support Load**: 80%+ of customer queries are repetitive and could be automated.
-- **No Context Awareness**: Systems can't handle follow-up questions or maintain conversation flow.
-- **Scalability Issues**: Human agents required for basic query resolution.
+- **Poor User Experience**: Users struggle to find relevant answers in static lists
+- **High Support Load**: 80%+ of customer queries are repetitive and could be automated
+- **No Context Awareness**: Systems can't handle follow-up questions or maintain conversation flow
+- **Scalability Issues**: Human agents required for basic query resolution
 
 ## 💡 **Our Solution**
 
 An intelligent FAQ bot that combines advanced web scraping, semantic search, and conversational AI to deliver:
-- **Instant Responses**: 0.4-second average query processing.
-- **Context Awareness**: Multi-turn conversations with memory.
-- **High Accuracy**: 80%+ success rate in query-category matching.
-- **24/7 Availability**: Automated support without human intervention.
+- **Instant Responses**: 0.4-second average query processing
+- **Context Awareness**: Multi-turn conversations with memory
+- **High Accuracy**: 80%+ success rate in query-category matching
+- **24/7 Availability**: Automated support without human intervention
 
 ## 📊 **Live Demo Results**
 
 ### **Example Conversations**
 
-**Query 1: Card Activation**  
+**Query 1: Card Activation**
 ```
-
 👤 User: "How can I activate my Jupiter card?"
 
-🤖 Bot: "To activate your Jupiter card, you can simply swipe your debit card at any
-pre-approved merchant using a card that has the debit card facility. The
-activation process is automatic and instant upon first use."
+🤖 Bot: "To activate your Jupiter card, you can simply swipe your debit card at any 
+       pre-approved merchant using a card that has the debit card facility. The 
+       activation process is automatic and instant upon first use."
 
 📊 Metadata: Category: Cards | Response Time: 0.41s | Confidence: 95%
-
 ```
 
-**Query 2: Rewards System**  
+**Query 2: Rewards System**
 ```
-
 👤 User: "What are Jewels?"
 
-🤖 Bot: "Jewels are credits you earn when you make eligible payments with Jupiter.
-You can redeem them for instant discounts on future bill payments. Think of
-them as cashback rewards that you can use immediately!"
+🤖 Bot: "Jewels are credits you earn when you make eligible payments with Jupiter. 
+       You can redeem them for instant discounts on future bill payments. Think of 
+       them as cashback rewards that you can use immediately!"
 
 📊 Metadata: Category: Rewards & Jewels | Response Time: 0.36s | Confidence: 98%
-
 ```
 
-**Query 3: Payment Issues**  
+**Query 3: Payment Issues**
 ```
-
 👤 User: "My bill payment failed, what should I do?"
 
-🤖 Bot: "Sorry to hear that your bill payment failed! If you're experiencing issues
-with a failed transaction, please contact the app's customer support
-immediately. They can help investigate the issue and process a refund if
-necessary. You can also try the payment again after some time."
+🤖 Bot: "Sorry to hear that your bill payment failed! If you're experiencing issues 
+       with a failed transaction, please contact the app's customer support 
+       immediately. They can help investigate the issue and process a refund if 
+       necessary. You can also try the payment again after some time."
 
 📊 Metadata: Category: Bills & Recharges | Response Time: 0.40s | Confidence: 92%
-
-````
+```
 
 ### **Performance Metrics**
-
-- **📈 Data Processed**: 1,497 FAQ documents across 7 categories  
-- **🎯 Accuracy**: 80%+ category matching success rate  
-- **⚡ Speed**: Average 0.4 seconds response time  
-- **🔄 Conversations**: Multi-turn dialogue with context preservation  
+- **📈 Data Processed**: 1,497 FAQ documents across 7 categories
+- **🎯 Accuracy**: 80%+ category matching success rate
+- **⚡ Speed**: Average 0.4 seconds response time
+- **🔄 Conversations**: Multi-turn dialogue with context preservation
 
 ## 📁 **Project Structure**
 
 ```bash
 Jupiter_FAQ_Bot/
 ├── Jupyter.ipynb              # Main notebook implementation  
-├── FAQ.json                   # Extracted FAQ data (questions and answers)
+├── FAQ.json                   # Extracted FAQ data (the question and  also answers on it)
 ├── requirements.txt           # Python dependencies
 ├── jupiter_vectordb_enhanced/ # ChromaDB storage
 │   └── chroma.sqlite3
-├── all_urls.txt               # Crawled URLs list
-└── README.md                  # Project documentation
-````
+├── all_urls.txt              # Crawled URLs list
+└── README.md                 # Project documentation
+```
 
 ## 🚀 **Quick Start Guide**
 
@@ -127,63 +121,59 @@ pip install -r requirements.txt
 
 ```python
 # Get your free Groq API key from: https://console.groq.com/keys
-import os
 os.environ["GROQ_API_KEY"] = "your_groq_api_key_here"
 ```
 
 ### **Run the Notebook**
 
 1. **Open Jupyter Notebook**
-
    ```bash
    jupyter notebook Jupyter.ipynb
    ```
 
 2. **Or use Google Colab** (Recommended)
-   🔗 Direct Link: [Open in Colab](https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp)
+   ```
+   🔗 Direct Link: https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp
+   ```
 
 3. **Execute all cells** to:
-
-   * Load and process FAQ data
-   * Create vector database
-   * Start interactive chat session
+   - Load and process FAQ data
+   - Create vector database
+   - Start interactive chat session
 
 ## 🛠️ **How It Works**
 
 ### **System Architecture**
 
-<p align="center">
-  <img src="Block.png" alt="System Architecture Diagram" width="600"/>
-</p>
-
-**Workflow:**
-**User Query → Context Memory → Query Refinement → Dual Retriever (Similarity + MMR) → LLM Response Generation → Context Update**
+```
+User Query → Memory Check → Query Enhancement → Dual Retrieval → LLM Response → Context Update
+```
 
 ### **Key Components**
 
-| Component            | Technology              | Purpose                     |
-| -------------------- | ----------------------- | --------------------------- |
-| Web Scraping         | BeautifulSoup, Requests | Extract FAQ content         |
-| Embeddings           | sentence-transformers   | Semantic vectorization      |
-| Vector Store         | ChromaDB                | Efficient document storage  |
-| Large Language Model | Groq Llama3-8b-8192     | Context-aware response gen. |
-| Framework            | LangChain               | Workflow orchestration      |
+| **Component** | **Technology** | **Purpose** |
+|---|---|---|
+| **Web Scraping** | BeautifulSoup + Requests | FAQ data extraction |
+| **Embeddings** | sentence-transformers | Semantic search |
+| **Vector Store** | ChromaDB | Document storage |
+| **LLM** | Groq Llama3-8b-8192 | Response generation |
+| **Framework** | LangChain | AI orchestration |
 
 ### **Implementation Steps**
 
-1. **Data Collection**: Crawl Jupiter's website for FAQ content.
-2. **Processing**: Extract and categorize Q\&A pairs.
-3. **Vector Database**: Create embeddings for semantic search.
-4. **Retrieval**: Dual system combining similarity search and Maximum Marginal Relevance (MMR) for higher accuracy.
-5. **Generation**: LLM-powered responses with conversation memory for multi-turn interaction.
+1. **Data Collection**: Crawl Jupiter's website for FAQ content
+2. **Processing**: Extract and categorize Q&A pairs
+3. **Vector Database**: Create embeddings for semantic search
+4. **Retrieval**: Dual system (Similarity + MMR) for better accuracy
+5. **Generation**: LLM-powered responses with conversation memory
 
 ## 🎯 **Key Features**
 
-* **🧠 Smart Retrieval**: Combines similarity search with Maximum Marginal Relevance.
-* **💬 Conversational Memory**: Maintains context across multiple turns.
-* **⚡ Fast Processing**: Sub-second response times.
-* **🎯 High Accuracy**: 80%+ success rate in category matching.
-* **📊 Rich Metadata**: Includes confidence scores and response times.
+- **🧠 Smart Retrieval**: Combines similarity search with Maximum Marginal Relevance
+- **💬 Conversational Memory**: Maintains context across multiple turns
+- **⚡ Fast Processing**: Sub-second response times
+- **🎯 High Accuracy**: 80%+ success rate in category matching
+- **📊 Rich Metadata**: Includes confidence scores and response times
 
 ## 🧪 **Testing the System**
 
@@ -210,9 +200,9 @@ for query in test_queries:
 
 ### **Performance Benchmarks**
 
-* **Simple Queries**: 0.26 - 0.45 seconds
-* **Complex Queries**: 0.5 - 2.0 seconds
-* **Multi-turn Conversations**: 0.4 - 1.5 seconds
+- **Simple Queries**: 0.26 - 0.45 seconds
+- **Complex Queries**: 0.5 - 2.0 seconds
+- **Multi-turn Conversations**: 0.4 - 1.5 seconds
 
 ## 🔧 **Configuration**
 
@@ -244,13 +234,13 @@ TEMPERATURE = 0.1
 
 ## 🚀 **Business Impact**
 
-| Metric             | Achievement                        |
-| ------------------ | ---------------------------------- |
-| Support Automation | 80%+ queries handled automatically |
-| Response Time      | 0.4 seconds average                |
-| Availability       | 24/7 operation                     |
-| Scalability        | Unlimited concurrent users         |
-| Cost Reduction     | Significant Tier-1 support savings |
+| **Metric** | **Achievement** |
+|---|---|
+| **Support Automation** | 80%+ queries handled automatically |
+| **Response Time** | 0.4 seconds average |
+| **Availability** | 24/7 operation |
+| **Scalability** | Unlimited concurrent users |
+| **Cost Reduction** | Significant Tier-1 support savings |
 
 ## 🤝 **Contributing**
 
@@ -266,32 +256,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙋‍♂️ **Support & Contact**
 
-* **GitHub Issues**: [Report bugs or request features](https://github.com/sAI-2025/Jupiter_FAQ_Bot/issues)
-* **Live Demo**: [Try it on Google Colab](https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp)
+- **GitHub Issues**: [Report bugs or request features](https://github.com/sAI-2025/Jupiter_FAQ_Bot/issues)
+- **Live Demo**: [Try it on Google Colab](https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp)
 
-**Author**: Sai Krishna Chowdary Chundru
+**Author**: Sai Krishna Chowdary Chundru  
 **GitHub**: [github.com/sAI-2025](https://github.com/sAI-2025)
 
 **Built with ❤️ for intelligent customer support automation**
 
 ---
-
 ### Author: Sai Krishna Chowdary Chundru
-
-**GitHub**: [github.com/sAI-2025](https://github.com/sAI-2025)
+**GitHub**: [github.com/sAI-2025](https://github.com/sAI-2025)  
 **LinkedIn**: [linkedin.com/in/sai-krishna-chowdary-chundru](https://linkedin.com/in/sai-krishna-chowdary-chundru)
 
-```
-
----
-
-### Notes:
-
-- Replace the `Block.png` with your updated professional diagram image.  
-- If you want me to create a simple diagram image here, just say — I can help with a description or generate a visual concept.  
-- Let me know if you want me to help format and add the Google Doc content as well.
-
----
-
-Would you like me to help prepare the **Block.png** diagram image or assist with the Google Doc integration next?
-```
