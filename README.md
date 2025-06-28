@@ -1,4 +1,4 @@
-z# 🤖 Jupiter FAQ Bot: AI-Powered Customer Support System
+# 🤖 Jupiter FAQ Bot: AI-Powered Customer Support System
 
 *Transform static FAQ pages into an intelligent, conversational AI support system that understands user context and delivers instant, accurate answers — enhancing customer experience and reducing support workload.*
 
