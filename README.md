@@ -60,7 +60,7 @@ An intelligent FAQ bot that combines advanced web scraping, semantic search, and
   <img src="./Block.png" alt="System Architecture Diagram" width="600"/>
 </p>
 
-```
+
 
 ### **How It Works: Step-by-Step**
 
