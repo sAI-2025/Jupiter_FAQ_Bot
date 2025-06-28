@@ -2,7 +2,6 @@
 
 *Transform static FAQ pages into an intelligent, conversational AI support system that understands user context and delivers instant, accurate answers — enhancing customer experience and reducing support workload.*
 
----
 <!-- Badges -->
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python" alt="Python 3.10"/>
@@ -20,7 +19,7 @@
     <img src="https://img.shields.io/github/stars/sAI-2025/Jupiter_FAQ_Bot?style=social" alt="GitHub Stars"/>
   </a>
 </p>
----
+
 
 
 ## 🎯 **Problem Statement**
