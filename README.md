@@ -1,17 +1,45 @@
 # 🤖 Jupiter FAQ Bot: AI-Powered Customer Support System
 
-Transform static FAQ pages into intelligent, conversational AI support that understands context and delivers instant, accurate responses.
+*Transform static FAQ pages into an intelligent, conversational AI support system that understands user context and delivers instant, accurate answers — enhancing customer experience and reducing support workload.*
 
 ---
 
-![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
-![LLM-Driven](https://img.shields.io/badge/LLM-Powered-brightgreen?logo=openai)
-![License](https://img.shields.io/badge/License-MIT-green?logo=opensourceinitiative)
-![Status](https://img.shields.io/badge/Status-Beta-orange?logo=githubactions)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/)  
-[![Star](https://img.shields.io/github/stars/your-username/jupiter-faq-bot?style=social)](https://github.com/your-username/jupiter-faq-bot/stargazers)
+<!-- Project Showcase Image -->
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/your-username/your-repo/main/assets/jupiter-faq-bot-demo.gif" alt="Jupiter FAQ Bot Demo" width="700"/>
+</p>
 
 ---
+
+<!-- Badges -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python" alt="Python 3.10"/>
+  <img src="https://img.shields.io/badge/LLM-Powered-brightgreen?logo=openai" alt="LLM Powered"/>
+  <img src="https://img.shields.io/badge/License-MIT-green?logo=opensourceinitiative" alt="MIT License"/>
+  <img src="https://img.shields.io/badge/Status-Beta-orange?logo=githubactions" alt="Beta Status"/>
+  <img src="https://img.shields.io/badge/LangChain-Framework-4A90E2?logo=langchain" alt="LangChain"/>
+  <img src="https://img.shields.io/badge/ChromaDB-Vector%20Store-00BFFF?logo=database" alt="ChromaDB"/>
+  <img src="https://img.shields.io/badge/Groq-API-purple?logo=api" alt="Groq API"/>
+  <img src="https://img.shields.io/badge/Colab-Ready-orange?logo=googlecolab" alt="Google Colab"/>
+  <a href="https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp" target="_blank">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/>
+  </a>
+  <a href="https://github.com/sAI-2025/Jupiter_FAQ_Bot/stargazers" target="_blank">
+    <img src="https://img.shields.io/github/stars/sAI-2025/Jupiter_FAQ_Bot?style=social" alt="GitHub Stars"/>
+  </a>
+</p>
+
+---
+
+<!-- Summary -->
+<p align="center">
+  <em>
+    Empower your customer support with <strong>Jupiter FAQ Bot</strong> — a cutting-edge AI assistant that combines web scraping, semantic search, and large language models to deliver fast, accurate, and context-aware answers 24/7.
+  </em>
+</p>
+
+---
+
 
 ## 🎯 **Problem Statement**
 
