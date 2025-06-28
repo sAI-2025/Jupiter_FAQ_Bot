@@ -309,14 +309,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **GitHub Issues**: [Report bugs or request features](https://github.com/sAI-2025/Jupiter_FAQ_Bot/issues)
 - **Live Demo**: [Try it on Google Colab](https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp)
-- **Report** : [Paper][https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp#scrollTo=ukAkh7TIg1H3]
+- **Report** : [Paper](https://docs.google.com/document/d/1jABKZU08i0ZnYaZnLS7v19DpzOwRFjxyE7hwuvOdaCc/edit?tab=t.0)
 
 **Author**: Sai Krishna Chowdary Chundru  
-**GitHub**: [github/sAI-2025](https://github.com/sAI-2025)
+**GitHub**: [git@sAI](https://github.com/sAI-2025)
 
 **Built with ❤️ for intelligent customer support automation**
 
 ---
 ### Author: Sai Krishna Chowdary Chundru
-**GitHub**: [github/sAI-2025](https://github.com/sAI-2025)  
+**GitHub**: [git@sAI](https://github.com/sAI-2025)  
 **LinkedIn**: [linkedin/sai-krishna-chowdary-chundru](https://linkedin.com/in/sai-krishna-chowdary-chundru)
+**medium**: [medium@sai](https://medium.com/@sai2025)
