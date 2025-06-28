@@ -1,0 +1,22 @@
+# Core language model and chain framework
+langchain>=0.1.16
+langchain-core>=0.1.42
+langchain-community>=0.0.34
+langchain-groq>=0.0.3
+
+# Embeddings and Vector Store
+sentence-transformers>=2.2.2
+chromadb>=0.4.24
+
+# Chat history and session support
+langchainhub>=0.1.14
+
+# Optional: environment variables & logging
+python-dotenv>=1.0.1
+
+# Others (for consistency and compatibility)
+tqdm>=4.66.1
+typing-extensions>=4.11.0
+
+torch
+tensorflow
