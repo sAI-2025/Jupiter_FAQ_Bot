@@ -58,6 +58,21 @@ An intelligent FAQ bot that combines advanced web scraping, semantic search, and
 
 
 ```
+
+
+## 📊 System Block Diagram
+
+<!-- ✅ Standard Markdown fallback -->
+![Block Diagram](Block.png)
+
+<!-- ✅ HTML for size control (most underrated trick) -->
+<p align="center">
+  <img src="Block.png" alt="Block Diagram" width="600"/>
+</p>
+
+<!-- 🔎 Optional tip: Use relative path for repo portability -->
+<!-- ./images/Block.png or ./docs/assets/Block.png -->
+
 User Query → Session Memory → Query Enhancement → Dual Retrieval → LLM Response → Context Update
 ```
 
@@ -308,14 +323,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **GitHub Issues**: [Report bugs or request features](https://github.com/sAI-2025/Jupiter_FAQ_Bot/issues)
 - **Live Demo**: [Try it on Google Colab](https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp)
+- **Report** :
 
 **Author**: Sai Krishna Chowdary Chundru  
-**GitHub**: [github.com/sAI-2025](https://github.com/sAI-2025)
+**GitHub**: [github/sAI-2025](https://github.com/sAI-2025)
 
 **Built with ❤️ for intelligent customer support automation**
 
 ---
 ### Author: Sai Krishna Chowdary Chundru
-**GitHub**: [github.com/sAI-2025](https://github.com/sAI-2025)  
-**LinkedIn**: [linkedin.com/in/sai-krishna-chowdary-chundru](https://linkedin.com/in/sai-krishna-chowdary-chundru)
-M
+**GitHub**: [github/sAI-2025](https://github.com/sAI-2025)  
+**LinkedIn**: [linkedin/sai-krishna-chowdary-chundru](https://linkedin.com/in/sai-krishna-chowdary-chundru)
