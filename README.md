@@ -263,3 +263,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **GitHub**: [github.com/sAI-2025](https://github.com/sAI-2025)
 
 **Built with ❤️ for intelligent customer support automation**
+
+---
+### Author: Sai Krishna Chowdary Chundru
+**GitHub**: [github.com/sAI-2025](https://github.com/sAI-2025)  
+**LinkedIn**: [linkedin.com/in/sai-krishna-chowdary-chundru](https://linkedin.com/in/sai-krishna-chowdary-chundru)
+
