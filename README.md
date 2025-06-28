@@ -111,8 +111,6 @@ pip install -r requirements.txt
 ### **Setup API Key**
 
 ```python
-import os
-
 # Get your free Groq API key from: https://console.groq.com/keys
 os.environ["GROQ_API_KEY"] = "your_groq_api_key_here"
 ```
