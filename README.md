@@ -309,20 +309,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **GitHub Issues**: [Report bugs or request features](https://github.com/sAI-2025/Jupiter_FAQ_Bot/issues)
 - **Live Demo**: [Try it on Google Colab](https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp)
 
-### **Author**: Sai Krishna Chowdary Chundru
-**GitHub**: [github.com/sAI-2025](https://github.com/sAI-2025)  
-**LinkedIn**: [linkedin.com/in/sai-krishna-chowdary-chundru](https://linkedin.com/in/sai-krishna-chowdary-chundru)
+**Author**: Sai Krishna Chowdary Chundru  
+**GitHub**: [github.com/sAI-2025](https://github.com/sAI-2025)
 
 **Built with ❤️ for intelligent customer support automation**
 
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/51467928/4560d625-d011-4960-82bc-794898651e78/paste.txt
-[2] https://github.com/ARBProtocol/solana-jupiter-bot/blob/main/README.md
-[3] https://github.com/JAJames/Jupiter-Bot
-[4] https://www.quicknode.com/guides/solana-development/3rd-party-integrations/jupiter-api-trading-bot
-[5] https://dev.jup.ag/docs/old/legacy/apis/swap-api
-[6] https://goodcrypto.app/jupiter-trading-bot/
-[7] https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/tutorials/bot-service
-[8] https://jupiterailabs.com/chatbot-development/
-[9] https://jupiter-theme.zendesk.com/hc/en-us/articles/4466246069777-Understanding-where-you-can-use-Answer-Bot
-[10] https://jupiter-theme.zendesk.com/hc/en-us/articles/4466231596689-Analyzing-your-Answer-Bot-activity
-[11] https://docs.aws.amazon.com/lexv2/latest/dg/faq-bot-kendra-search.html
+---
+### Author: Sai Krishna Chowdary Chundru
+**GitHub**: [github.com/sAI-2025](https://github.com/sAI-2025)  
+**LinkedIn**: [linkedin.com/in/sai-krishna-chowdary-chundru](https://linkedin.com/in/sai-krishna-chowdary-chundru)
+
