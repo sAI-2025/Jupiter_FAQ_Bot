@@ -2,6 +2,7 @@
 
 *Transform static FAQ pages into an intelligent, conversational AI support system that understands user context and delivers instant, accurate answers — enhancing customer experience and reducing support workload.*
 
+
 <!-- Badges -->
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python" alt="Python 3.10"/>
@@ -20,6 +21,20 @@
   </a>
 </p>
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+  
 
 
 ## 🎯 **Problem Statement**
@@ -37,6 +52,47 @@ An intelligent FAQ bot that combines advanced web scraping, semantic search, and
 - **Context Awareness**: Multi-turn conversations with memory
 - **High Accuracy**: 80%+ success rate in query-category matching
 - **24/7 Availability**: Automated support without human intervention
+
+## 🏗️ **System Architecture**
+
+
+
+```
+User Query → Session Memory → Query Enhancement → Dual Retrieval → LLM Response → Context Update
+```
+
+### **How It Works: Step-by-Step**
+
+**1. User Query** – The Start of the Conversation  
+You type a question like "How to activate my Jupiter card?" That's the starting point. The system captures your text along with session details like time and user ID.
+
+**2. Session Memory** – Remembering You  
+Before answering, the bot checks your conversation history. If it's a follow-up, it uses past context. If you're new, it starts fresh but tracks everything from now on.
+
+**3. Preprocessing & Variations** – Smart Rephrasing  
+The bot cleans up your question and generates multiple variations. This helps understand all the ways your query could be asked, making search much smarter.
+
+**4. Dual Retrieval** – Two-Brain Search  
+Two search methods work in parallel:
+
+🤝 **Similarity Search** finds exact or close matches  
+Finds questions closely matching your words — great for exact answers.
+- Query: "How can I pay bills?"
+- Returns: "Can I pay my personal loan in advance?", "Pay any kind of debt"
+
+🌐 **MMR Search** – Broader, Smarter Matches  
+Looks for related but varied content to add helpful context.
+- Same query: "How can I pay bills?"
+- Returns: "What types of bills can I pay on Jupiter?", "Do I get rewards for bill payments?"
+
+**5. Ranking & Selection** – Picking the Best  
+From the 6 documents retrieved, duplicates are removed. Then, the most relevant and diverse 3 are selected to ensure a well-rounded answer.
+
+**6. AI-Powered Answer Generation** – LLM in Action  
+Using Groq's Llama 3, the bot reads all info and crafts a natural, helpful, and precise reply tailored to your question. It feels like chatting with a smart human.
+
+**7. Memory Update + Final Reply** – Always Learning  
+Your question and the response are saved for future reference. You get a friendly, informative reply, and the bot is now smarter for your next visit.
 
 ## 📊 **Live Demo Results**
 
@@ -87,11 +143,12 @@ An intelligent FAQ bot that combines advanced web scraping, semantic search, and
 ```bash
 Jupiter_FAQ_Bot/
 ├── Jupyter.ipynb              # Main notebook implementation  
-├── FAQ.json                   # Extracted FAQ data (the question and  also answers on it)
+├── FAQ.json                   # Extracted FAQ data (questions and answers)
 ├── requirements.txt           # Python dependencies
 ├── jupiter_vectordb_enhanced/ # ChromaDB storage
 │   └── chroma.sqlite3
 ├── all_urls.txt              # Crawled URLs list
+├── Block.png                  # System architecture diagram
 └── README.md                 # Project documentation
 ```
 
@@ -120,6 +177,8 @@ pip install -r requirements.txt
 ### **Setup API Key**
 
 ```python
+import os
+
 # Get your free Groq API key from: https://console.groq.com/keys
 os.environ["GROQ_API_KEY"] = "your_groq_api_key_here"
 ```
@@ -141,15 +200,7 @@ os.environ["GROQ_API_KEY"] = "your_groq_api_key_here"
    - Create vector database
    - Start interactive chat session
 
-## 🛠️ **How It Works**
-
-### **System Architecture**
-
-```
-User Query → Memory Check → Query Enhancement → Dual Retrieval → LLM Response → Context Update
-```
-
-### **Key Components**
+## 🛠️ **Key Technologies**
 
 | **Component** | **Technology** | **Purpose** |
 |---|---|---|
@@ -158,14 +209,6 @@ User Query → Memory Check → Query Enhancement → Dual Retrieval → LLM Res
 | **Vector Store** | ChromaDB | Document storage |
 | **LLM** | Groq Llama3-8b-8192 | Response generation |
 | **Framework** | LangChain | AI orchestration |
-
-### **Implementation Steps**
-
-1. **Data Collection**: Crawl Jupiter's website for FAQ content
-2. **Processing**: Extract and categorize Q&A pairs
-3. **Vector Database**: Create embeddings for semantic search
-4. **Retrieval**: Dual system (Similarity + MMR) for better accuracy
-5. **Generation**: LLM-powered responses with conversation memory
 
 ## 🎯 **Key Features**
 
@@ -242,6 +285,13 @@ TEMPERATURE = 0.1
 | **Scalability** | Unlimited concurrent users |
 | **Cost Reduction** | Significant Tier-1 support savings |
 
+## 📚 **Documentation**
+
+For detailed technical documentation and implementation guides, visit:
+- **📖 Complete Documentation**: [Google Docs](https://docs.google.com/document/d/1jABKZU08i0ZnYaZnLS7v19DpzOwRFjxyE7hwuvOdaCc/edit?usp=sharing)
+- **🔧 Technical Architecture**: See Block.png for detailed system flow
+- **💻 Live Demo**: [Google Colab Notebook](https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp)
+
 ## 🤝 **Contributing**
 
 1. Fork the repository
@@ -259,13 +309,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **GitHub Issues**: [Report bugs or request features](https://github.com/sAI-2025/Jupiter_FAQ_Bot/issues)
 - **Live Demo**: [Try it on Google Colab](https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp)
 
-**Author**: Sai Krishna Chowdary Chundru  
-**GitHub**: [github.com/sAI-2025](https://github.com/sAI-2025)
-
-**Built with ❤️ for intelligent customer support automation**
-
----
-### Author: Sai Krishna Chowdary Chundru
+### **Author**: Sai Krishna Chowdary Chundru
 **GitHub**: [github.com/sAI-2025](https://github.com/sAI-2025)  
 **LinkedIn**: [linkedin.com/in/sai-krishna-chowdary-chundru](https://linkedin.com/in/sai-krishna-chowdary-chundru)
 
+**Built with ❤️ for intelligent customer support automation**
+
+[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/51467928/4560d625-d011-4960-82bc-794898651e78/paste.txt
+[2] https://github.com/ARBProtocol/solana-jupiter-bot/blob/main/README.md
+[3] https://github.com/JAJames/Jupiter-Bot
+[4] https://www.quicknode.com/guides/solana-development/3rd-party-integrations/jupiter-api-trading-bot
+[5] https://dev.jup.ag/docs/old/legacy/apis/swap-api
+[6] https://goodcrypto.app/jupiter-trading-bot/
+[7] https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/tutorials/bot-service
+[8] https://jupiterailabs.com/chatbot-development/
+[9] https://jupiter-theme.zendesk.com/hc/en-us/articles/4466246069777-Understanding-where-you-can-use-Answer-Bot
+[10] https://jupiter-theme.zendesk.com/hc/en-us/articles/4466231596689-Analyzing-your-Answer-Bot-activity
+[11] https://docs.aws.amazon.com/lexv2/latest/dg/faq-bot-kendra-search.html
