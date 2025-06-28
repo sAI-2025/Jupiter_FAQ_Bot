@@ -86,8 +86,8 @@ An intelligent FAQ bot that combines advanced web scraping, semantic search, and
 
 ```bash
 Jupiter_FAQ_Bot/
-├── Jupyter.ipynb              # Main notebook implementation
-├── FAQ.json                   # Extracted FAQ data
+├── Jupyter.ipynb              # Main notebook implementation  
+├── FAQ.json                   # Extracted FAQ data (the question and  also answers on it)
 ├── requirements.txt           # Python dependencies
 ├── jupiter_vectordb_enhanced/ # ChromaDB storage
 │   └── chroma.sqlite3
