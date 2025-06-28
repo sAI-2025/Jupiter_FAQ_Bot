@@ -3,14 +3,6 @@
 *Transform static FAQ pages into an intelligent, conversational AI support system that understands user context and delivers instant, accurate answers — enhancing customer experience and reducing support workload.*
 
 ---
-
-<!-- Project Showcase Image -->
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/your-username/your-repo/main/assets/jupiter-faq-bot-demo.gif" alt="Jupiter FAQ Bot Demo" width="700"/>
-</p>
-
----
-
 <!-- Badges -->
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python" alt="Python 3.10"/>
@@ -28,16 +20,6 @@
     <img src="https://img.shields.io/github/stars/sAI-2025/Jupiter_FAQ_Bot?style=social" alt="GitHub Stars"/>
   </a>
 </p>
-
----
-
-<!-- Summary -->
-<p align="center">
-  <em>
-    Empower your customer support with <strong>Jupiter FAQ Bot</strong> — a cutting-edge AI assistant that combines web scraping, semantic search, and large language models to deliver fast, accurate, and context-aware answers 24/7.
-  </em>
-</p>
-
 ---
 
 
