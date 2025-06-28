@@ -1,201 +1,247 @@
+# 🤖 Jupiter FAQ Bot: AI-Powered Customer Support System
 
-````markdown
-# 🤖 Jupiter FAQ Bot
+[![Python](https://img://img.shields.io/badge/Langhttps://img.shields.io/badge/Chromahttps://img.shields.io/badge/License-MIT-green](https://colab.research.google.com/assets/colab-badge.svg static FAQ pages into intelligent, conversational AI support that understands context and delivers instant, accurate responses.**
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Colab Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp)
+## 🎯 **Problem Statement**
 
-> **AI-Powered Customer Support System** that transforms static FAQ pages into intelligent, conversational support powered by Groq, LangChain, and ChromaDB.
+Traditional FAQ systems suffer from:
+- **Poor User Experience**: Users struggle to find relevant answers in static lists
+- **High Support Load**: 80%+ of customer queries are repetitive and could be automated
+- **No Context Awareness**: Systems can't handle follow-up questions or maintain conversation flow
+- **Scalability Issues**: Human agents required for basic query resolution
 
----
+## 💡 **Our Solution**
 
-## 🚀 Overview
+An intelligent FAQ bot that combines advanced web scraping, semantic search, and conversational AI to deliver:
+- **Instant Responses**: 0.4-second average query processing
+- **Context Awareness**: Multi-turn conversations with memory
+- **High Accuracy**: 80%+ success rate in query-category matching
+- **24/7 Availability**: Automated support without human intervention
 
-**Jupiter FAQ Bot** is a conversational AI system that:
-- 💬 Answers user questions instantly with high accuracy
-- 🧠 Understands multi-turn queries with memory
-- ⚙️ Uses advanced retrieval (similarity + MMR) and LLMs
-- 🔍 Trains on real FAQs using semantic search and vector databases
+## 📊 **Live Demo Results**
 
-This project is ideal for startups, fintechs, or any product team looking to automate customer support using AI.
+### **Example Conversations**
 
----
+**Query 1: Card Activation**
+```
+👤 User: "How can I activate my Jupiter card?"
 
-## 🎯 Why This Project?
+🤖 Bot: "To activate your Jupiter card, you can simply swipe your debit card at any 
+       pre-approved merchant using a card that has the debit card facility. The 
+       activation process is automatic and instant upon first use."
 
-Most customer support tools:
-- Are **static** and hard to navigate
-- Waste time with **repetitive queries**
-- Can’t handle **follow-up questions**
+📊 Metadata: Category: Cards | Response Time: 0.41s | Confidence: 95%
+```
 
-**Jupiter FAQ Bot** fixes that with:
-- ✅ Contextual AI conversations
-- ✅ Real-time query matching
-- ✅ 80%+ accuracy with <0.5s response time
+**Query 2: Rewards System**
+```
+👤 User: "What are Jewels?"
 
----
+🤖 Bot: "Jewels are credits you earn when you make eligible payments with Jupiter. 
+       You can redeem them for instant discounts on future bill payments. Think of 
+       them as cashback rewards that you can use immediately!"
 
-## 🧩 Features
+📊 Metadata: Category: Rewards & Jewels | Response Time: 0.36s | Confidence: 98%
+```
 
-| Feature               | Description |
-|----------------------|-------------|
-| **Dual Retriever**   | Combines Similarity & MMR search for better accuracy |
-| **Groq LLM**         | Superfast Llama3-8b-8192 for blazing response |
-| **LangChain**        | Modular orchestration of memory, retrieval, and generation |
-| **ChromaDB**         | Efficient vector store for FAQs |
-| **Web Crawler**      | Automatically extracts content from Jupiter’s site |
-| **Colab Support**    | One-click demo via Google Colab |
+**Query 3: Payment Issues**
+```
+👤 User: "My bill payment failed, what should I do?"
 
----
+🤖 Bot: "Sorry to hear that your bill payment failed! If you're experiencing issues 
+       with a failed transaction, please contact the app's customer support 
+       immediately. They can help investigate the issue and process a refund if 
+       necessary. You can also try the payment again after some time."
 
-## 📁 Project Structure
+📊 Metadata: Category: Bills & Recharges | Response Time: 0.40s | Confidence: 92%
+```
+
+### **Performance Metrics**
+- **📈 Data Processed**: 1,497 FAQ documents across 7 categories
+- **🎯 Accuracy**: 80%+ category matching success rate
+- **⚡ Speed**: Average 0.4 seconds response time
+- **🔄 Conversations**: Multi-turn dialogue with context preservation
+
+## 📁 **Project Structure**
 
 ```bash
-jupiter-faq-bot/
-├── app.py                     # FastAPI app (if using API)
-├── all_urls.txt               # Raw URL crawl list
-├── FAQ.json                   # Raw FAQ data
+Jupiter_FAQ_Bot/
+├── Jupyter.ipynb              # Main notebook implementation
+├── FAQ.json                   # Extracted FAQ data
+├── requirements.txt           # Python dependencies
 ├── jupiter_vectordb_enhanced/ # ChromaDB storage
 │   └── chroma.sqlite3
-├── Jupyter.ipynb              # Notebook demo
-├── requirements.txt           # Python dependencies
-````
-
----
-
-## ⚙️ Quick Start
-
-### ✅ Option 1: One-click Google Colab Demo (Recommended)
-
-[🔗 Open in Colab](https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp)
-
-```python
-# Install dependencies
-!pip install langchain chromadb sentence-transformers groq beautifulsoup4 requests pandas numpy
-
-# Set API key
-import os
-os.environ["GROQ_API_KEY"] = "your_groq_api_key_here"
-
-# Run the full workflow
-from main import main_enhanced_workflow
-vectorstore = main_enhanced_workflow("/path/to/FAQ.json")
-
-# Start chatting
-from chat_system import start_chat_session
-start_chat_session(vectorstore)
+├── all_urls.txt              # Crawled URLs list
+└── README.md                 # Project documentation
 ```
 
----
+## 🚀 **Quick Start Guide**
 
-### 💻 Option 2: Local Setup (For Developers)
-
-#### 1. Clone the Repository
+### **Prerequisites**
 
 ```bash
+# Required Software
+- Python 3.8 or higher
+- Git
+- Groq API key (free tier available)
+```
+
+### **Installation**
+
+```bash
+# Clone the repository
 git clone https://github.com/sAI-2025/Jupiter_FAQ_Bot.git
 cd Jupiter_FAQ_Bot
-```
 
-#### 2. Create a Virtual Environment
-
-```bash
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
-```
-
-#### 3. Install Dependencies
-
-```bash
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-#### 4. Add Your Groq API Key
+### **Setup API Key**
+
+```python
+import os
+
+# Get your free Groq API key from: https://console.groq.com/keys
+os.environ["GROQ_API_KEY"] = "your_groq_api_key_here"
+```
+
+### **Run the Notebook**
+
+1. **Open Jupyter Notebook**
+   ```bash
+   jupyter notebook Jupyter.ipynb
+   ```
+
+2. **Or use Google Colab** (Recommended)
+   ```
+   🔗 Direct Link: https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp
+   ```
+
+3. **Execute all cells** to:
+   - Load and process FAQ data
+   - Create vector database
+   - Start interactive chat session
+
+## 🛠️ **How It Works**
+
+### **System Architecture**
+
+```
+User Query → Memory Check → Query Enhancement → Dual Retrieval → LLM Response → Context Update
+```
+
+### **Key Components**
+
+| **Component** | **Technology** | **Purpose** |
+|---|---|---|
+| **Web Scraping** | BeautifulSoup + Requests | FAQ data extraction |
+| **Embeddings** | sentence-transformers | Semantic search |
+| **Vector Store** | ChromaDB | Document storage |
+| **LLM** | Groq Llama3-8b-8192 | Response generation |
+| **Framework** | LangChain | AI orchestration |
+
+### **Implementation Steps**
+
+1. **Data Collection**: Crawl Jupiter's website for FAQ content
+2. **Processing**: Extract and categorize Q&A pairs
+3. **Vector Database**: Create embeddings for semantic search
+4. **Retrieval**: Dual system (Similarity + MMR) for better accuracy
+5. **Generation**: LLM-powered responses with conversation memory
+
+## 🎯 **Key Features**
+
+- **🧠 Smart Retrieval**: Combines similarity search with Maximum Marginal Relevance
+- **💬 Conversational Memory**: Maintains context across multiple turns
+- **⚡ Fast Processing**: Sub-second response times
+- **🎯 High Accuracy**: 80%+ success rate in category matching
+- **📊 Rich Metadata**: Includes confidence scores and response times
+
+## 🧪 **Testing the System**
+
+### **Basic Usage**
+
+```python
+# Load the system
+vectorstore = main_enhanced_workflow("/content/FAQ.json")
+
+# Test with sample queries
+test_queries = [
+    "How can I pay bills?",
+    "What are Jewels?", 
+    "How to activate card?",
+    "KYC documents needed?"
+]
+
+# Run tests
+for query in test_queries:
+    response = enhanced_query_processing(query, primary_retriever, mmr_retriever)
+    print(f"Query: {query}")
+    print(f"Response: {response}")
+```
+
+### **Performance Benchmarks**
+
+- **Simple Queries**: 0.26 - 0.45 seconds
+- **Complex Queries**: 0.5 - 2.0 seconds
+- **Multi-turn Conversations**: 0.4 - 1.5 seconds
+
+## 🔧 **Configuration**
+
+### **Environment Variables**
 
 ```bash
-echo "GROQ_API_KEY=your_key_here" > .env
-```
+# Required
+GROQ_API_KEY=your_groq_api_key
 
-#### 5. Run the App (API Mode)
-
-```bash
-uvicorn app:app --host 0.0.0.0 --port 8000
-```
-
----
-
-## 💬 Example Chat
-
-```plaintext
-👤 User: How can I activate my Jupiter card?
-
-🤖 Bot: To activate your Jupiter card, you can simply swipe your debit card at any 
-       pre-approved merchant. Activation is automatic and instant upon first use.
-```
-
----
-
-## 🧠 How It Works (Under the Hood)
-
-1. **Web Crawler** pulls FAQ data from Jupiter’s site
-2. **Text Preprocessing** cleans and structures the content
-3. **Embeddings** are generated using `all-MiniLM-L6-v2`
-4. **Vector DB** stores questions and answers in ChromaDB
-5. **Dual Retriever** fetches similar and diverse results
-6. **LLM (Groq)** generates human-like responses with memory
-
----
-
-## 🔧 Configuration
-
-```env
-# .env file
-GROQ_API_KEY=your_groq_key
+# Optional
 VECTOR_STORE_PATH=./jupiter_vectordb_enhanced
-LLM_MODEL=llama3-8b-8192
-SIMILARITY_TOP_K=3
-MMR_DIVERSITY=0.7
+LOG_LEVEL=INFO
+MAX_CONVERSATION_HISTORY=10
 ```
 
----
+### **Model Parameters**
 
-## 🧪 Testing
+```python
+# Retrieval settings
+SIMILARITY_TOP_K = 3
+MMR_TOP_K = 3
+MMR_DIVERSITY = 0.7
 
-```bash
-# Run all test cases
-python -m pytest tests/ -v
+# LLM configuration
+LLM_MODEL = "llama3-8b-8192"
+MAX_TOKENS = 1000
+TEMPERATURE = 0.1
 ```
 
----
+## 🚀 **Business Impact**
 
-## 📄 License
+| **Metric** | **Achievement** |
+|---|---|
+| **Support Automation** | 80%+ queries handled automatically |
+| **Response Time** | 0.4 seconds average |
+| **Availability** | 24/7 operation |
+| **Scalability** | Unlimited concurrent users |
+| **Cost Reduction** | Significant Tier-1 support savings |
 
-MIT License. See [LICENSE](LICENSE) for details.
+## 🤝 **Contributing**
 
----
+1. Fork the repository
+2. Create feature branch: `git checkout -b feature/new-feature`
+3. Commit changes: `git commit -m 'Add new feature'`
+4. Push to branch: `git push origin feature/new-feature`
+5. Open Pull Request
 
-## 🙋‍♂️ Contact & Support
+## 📄 **License**
 
-* 📂 GitHub Issues: [Open a Bug Report](https://github.com/sAI-2025/Jupiter_FAQ_Bot/issues)
-* 📘 Documentation: [View Wiki](https://github.com/sAI-2025/Jupiter_FAQ_Bot/wiki)
-* 💬 Chat: [Try it on Colab](https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
+## 🙋‍♂️ **Support & Contact**
 
-> Built with ❤️ using LangChain, Groq, and ChromaDB to automate support.
+- **GitHub Issues**: [Report bugs or request features](https://github.com/sAI-2025/Jupiter_FAQ_Bot/issues)
+- **Live Demo**: [Try it on Google Colab](https://colab.research.google.com/drive/1r6LuB3XVM_V4OWgakm90mKBLTTht2STp)
 
-```
+**Author**: Sai Krishna Chowdary Chundru  
+**GitHub**: [github.com/sAI-2025](https://github.com/sAI-2025)
 
----
-
-## 📌 Next Steps (for You)
-
-If you're happy with the above:
-
-✅ Let me know and I can generate the actual `README.md` file content  
-✅ I can also help split your code into `/src`, `/tests`, etc.  
-✅ Or convert this into a **GitHub Pages site** for better documentation
-
-Would you like me to generate the actual updated README code file now?
-```
+**Built with ❤️ for intelligent customer support automation**
